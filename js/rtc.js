@@ -16,12 +16,21 @@
     /* TURN público de Open Relay (plan gratuito de metered.ca).
        Solo se usa si el P2P directo no logra conectar.
        Si alguna vez falla, en el README está cómo poner uno propio. */
-    { urls: 'turn:openrelay.metered.ca:80',
+    /*{ urls: 'turn:openrelay.metered.ca:80',
       username: 'openrelayproject', credential: 'openrelayproject' },
     { urls: 'turn:openrelay.metered.ca:443',
       username: 'openrelayproject', credential: 'openrelayproject' },
     { urls: 'turn:openrelay.metered.ca:443?transport=tcp',
-      username: 'openrelayproject', credential: 'openrelayproject' }
+      username: 'openrelayproject', credential: 'openrelayproject' }*/
+
+   { urls: "turn:global.relay.metered.ca:80",
+      username: "98558175d6d8fd264452904b", credential: 'xBlnDAF7JToQnpiv', },
+    { urls: "turn:global.relay.metered.ca:80?transport=tcp", 
+      username: "98558175d6d8fd264452904b", credential: 'xBlnDAF7JToQnpiv', },
+    { urls: "turn:global.relay.metered.ca:443",
+      username: "98558175d6d8fd264452904b", credential: 'xBlnDAF7JToQnpiv', },
+    { urls: "turns:global.relay.metered.ca:443?transport=tcp",
+      username: "98558175d6d8fd264452904b", credential: 'xBlnDAF7JToQnpiv', },   
   ];
 
   function crearConexion() {
